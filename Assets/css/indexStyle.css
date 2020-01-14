@@ -1,0 +1,260 @@
+body{
+    font-family: "Arial";
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+}
+
+/* NAVBAR */
+
+.navBar{
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    -webkit-box-shadow: 0px 5px 30px 0px #777;
+    -moz-box-shadow: 0px 5px 30px 0px #777;
+    box-shadow: 0px 5px 30px 0px #777;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navLogo{
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1%;
+}
+
+/* END_NAVBAR */
+
+/* CONTENT */
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box{
+    width: 90%;
+    margin-top: 50px;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#lastBox{
+    margin-bottom: 50px;
+}
+
+/* STYLING_BOX_INTERNO */
+.barTitle{
+    color: white;
+    background-color: #212121;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.textTitle{
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contentBox{
+    background-color: #000000;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small{
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.contentText{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+.secondSectionTxt{
+    margin-top: 5px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+p{
+    margin: 0px;
+}
+
+.contentImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.secondSectionImg{
+    width: 50%;
+    margin-top: 1%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.centerLine{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#img1{
+    width: 390px;
+    height: 260px;
+    background-image: url("../img/photo1.jpg");
+    margin-top: 50px; 
+}
+
+#img2{
+    width: 390px;
+    height: 260px;
+    background-image: url("../img/photo2.jpg");
+    margin-top: 10px; 
+    margin-bottom: 50px;
+}
+
+.btn{
+    background-color: #0277bd;
+    border: none;
+    width: 100px;
+    height: 13%;
+    display: inline-block;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+    color: black;
+}
+
+.btn:hover{
+    background-color: white;
+}
+/* END_STYLING_BOX_INTERNO */
+
+/* BACKGROUND */
+
+.background{
+    left: 0px;
+    width: 100%;
+    background-image: url("../img/background1.jpg"),
+                      url("../img/background2.jpg");
+    background-size: cover, 
+                     cover;
+    background-repeat: no-repeat, 
+                       no-repeat;
+    background-position: top center,
+                         bottom center;
+    background-size: 100% 50%,
+                     100% 50%;
+    z-index: -1;
+}
+
+/* END_BACKGROUND */
+
+/* END_CONTENT */
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    -webkit-box-shadow: 0px -5px 30px 0px #777;
+    -moz-box-shadow: 0px -5px 30px 0px #777;
+    box-shadow: 0px -5px 30px 0px #777;
+}
+/* END_FOOTER */
+
+@media only screen and (max-width: 950px) 
+{
+    .contentBox{
+        justify-content: center;
+    }
+    
+    .big{
+        width: 90%;
+    }
+    
+    .contentImages{
+        margin-bottom: 50px;
+    }
+    
+    .secondSectionImg{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 650px) 
+{
+    .big{
+        margin: 5px;
+    }
+    
+    .secondSectionTxt{
+        width: 90%;
+    }
+    
+    .secondSectionImg{
+        width: 90%;
+        margin-bottom: 0px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .btn{
+        width: 80%;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    
+    #img1{
+        width: 260px;
+        height: 173px;
+    }
+
+    #img2{
+        width: 260px;
+        height: 173px;
+    }
+    
+    .small{
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+}
